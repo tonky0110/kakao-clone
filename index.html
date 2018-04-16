@@ -2,30 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content = "tonky0110">
-    <meta name="description" content="Welcom to my Kakao Clone.">
-    <title>This is my title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            background-color: green;
+            height: 100%;
+        }
+        .box {
+            background-color: yellow;
+            width: 50%;
+            height: 50%;
+            padding: 20px 10px 5px 2px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .inside-box {
+            background-color: blue;
+            width: 50%;
+            height: 50%;
+            border: 5px dashed red;
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <header id="headerNumberOne" class="defaultHeader">
-            <h1>Title of a section.</h1>
-        </header>
-    </section>
+    <div class="box">
+        <div class="inside-box">
 
-    <div>
-        <header id="differentHeader" class="defaultHeader">Title of the unkown container.</header>
+        </div>
     </div>
 </body>
 </html>
-<!-- 2-6 -->
-<!-- meta 정보는 브라우저를 위한 정보, 따라서 해당 내용은 header에 작성한다.-->
-<!-- Information정보는 head파트. Contents 정보 body. -->
-<!-- semantic: 의미가 있는 태그(section, article, header, etc.) -->
-<!-- non-semantic: 의미가 없는 태그(div, span, etc.) -->
-<!-- div: part, 컨테이너, 박스와 같은 태그 -->
-<!-- span: short, 텍스트를 위한 컨테이너 -->
 
-<!-- 2-7 -->
-<!-- id: 각element마다 ID는 한개만 갖을 수 있음.  -->
-<!-- class: 여러개의 엘리먼트가 같은 class명을 사용할 수 있다. -->
+<!-- 3-4 -->
+<!-- contents: 내용. -->
+<!-- border: 경계.(두께, 종류, 색상) -->
+<!-- padding: 박스의 보더에서 안쪽으로 있는 간격. (1개: 전체, 2개: 상하, 좌우, 4개: 위에서부터 시계방향) -->
+<!-- margin: 박스의 보더에서 바깥쪽으로 있는 간격. (1개: 전체, 2개: 상하, 좌우, 4개: 위에서부터 시계방향) -->
+
+<!-- 3-5 -->
+block:
+inline-block:
+inline:
