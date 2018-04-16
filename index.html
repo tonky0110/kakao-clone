@@ -6,34 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body, html {
-            padding: 0;
-            margin: 0;
-            background-color: green;
-            height: 100%;
-        }
         .box {
-            background-color: yellow;
-            width: 50%;
-            height: 50%;
-            padding: 20px 10px 5px 2px;
-            margin-top: 50px;
-            margin-left: 50px;
-        }
-        .inside-box {
-            background-color: blue;
-            width: 50%;
-            height: 50%;
-            border: 5px dashed red;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="inside-box">
-
-        </div>
-    </div>
+    <span class="box">1</span>
+    <span class="box">1</span>
+    <span class="box">1</span>
 </body>
 </html>
 
@@ -44,6 +29,9 @@
 <!-- margin: 박스의 보더에서 바깥쪽으로 있는 간격. (1개: 전체, 2개: 상하, 좌우, 4개: 위에서부터 시계방향) -->
 
 <!-- 3-5 -->
-block:
-inline-block:
-inline:
+<!-- display -->
+<!-- block: 옆으로 다른 block이 있는 것을 허용하지 않음.(default) --> 
+<!-- inline-block: 블록의 사이즈가 작으면, 옆으로 정렬 --> 
+<!-- inline: 박스의 모든 property 설정값을 지움. 서로 옆으로 붙는 형태, 그러나 폭&높이 없음. --> 
+
+<!-- span display: inline-block 으로 설정을 하면, 박스가 아니고, text처럼 작용. -->
