@@ -6,19 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .box {
-            background-color: red;
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-            display: inline-block;
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 400%;
+            background-color:  red;
+        }
+        /* Position Fixed 
+         #boxOne {
+            height: 300px;
+            width: 300px;
+            background-color: yellow;
+            position:static;
+        }
+        #boxTwo {
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            position:fixed;
+            
+            bottom: 10px;
+            right: 0px;
+        } */
+        .abs-box {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+        .abs-child {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            right: 0;
         }
     </style>
 </head>
 <body>
-    <span class="box">1</span>
-    <span class="box">1</span>
-    <span class="box">1</span>
+    <!-- Position Fixed
+    <div id="boxOne">
+        <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+        <div class="box-child"></div>
+    </div> -->
+    <div class="abs-box">
+        <div class="abs-child"></div>
+    </div>
 </body>
 </html>
 
@@ -35,3 +73,11 @@
 <!-- inline: 박스의 모든 property 설정값을 지움. 서로 옆으로 붙는 형태, 그러나 폭&높이 없음. --> 
 
 <!-- span display: inline-block 으로 설정을 하면, 박스가 아니고, text처럼 작용. -->
+
+<!-- 3-6 -->
+<!-- 포지션 -->
+<!-- 포지션의 종류 4가지 -->
+<!-- 1) static - default옵션(문서위치에 고정 - 스크롤됨),  -->
+<!-- 2) fixed - 고정(화면) -->
+<!-- 3) absolute - 부모 element객체에 고정됨, 단 부모의 position옵션이 'relative'여야함. -->
+<!-- 4) relative -absolute속성의 자녀를 부모 element에 고정하기 위한 옵션 -->
