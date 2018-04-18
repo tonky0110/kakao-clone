@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .father {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 100%;
+            flex-wrap:wrap-reverse;
+        }
+        .box {
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+</body>
+</html>
+
+
+flex
+자동으로 그려주는 그리드가 없었음.
+부모element에게 속성을 부여.
+default 속성: inline-block
+
+flex-direction: row, column(자식wlement의 방향 지정.), row-reverese, column-reverese
+
+justify-content: flex-direction과 같은 방향으로 정렬 설정.
+1) center, 2) space-between, 3) space-around
+
+align-items: flex-direction 수직방향의 정렬 설정
+1) flex-start, 2) flex-end, 
+
+flex-direction: row --> justify-content(수평) && align-item(수직)
+flex-direction: column --> justify-content(수직) && align-item(수평)
+
+flex-wrap:
+1) wrap: element의 사이즈를 고정하고, 개행처리.
+2) no-wrap: element의 사이즈를 조정해서 '한'줄로 표현
+3) wrap-reverse: row/column의 순서가 반대
