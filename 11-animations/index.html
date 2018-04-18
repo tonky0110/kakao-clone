@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation: 5s scaleAndRotateSquare infinite ease-in-out;
+        }
+        /*
+        @keyframes scaleAndRotateSquare {
+            from {
+                transform: none;
+            }
+            to {
+                transform: rotate(1turn) scale(.5, .5);
+            }
+        }
+        */
+        @keyframes scaleAndRotateSquare {
+            0% {
+                transform: none;
+            }
+            50% {
+                transform: rotate(1turn) scale(.5, .5);
+                color: white;
+            }
+            100% {
+                transform: none;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">11</div>
+</body>
+</html>
+
+<!--
+animations
+반복되는 동작을 처리.
+animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+1.5s: 걸리는 시간.
+scaleAndRotateSquare: 애니메이션 명(keyframes)
+infinite: 반복(n: n회 반복)
+ease-in-out: transform방식
+
+애니메이션 설정 방법
+1)
+@keyframe 애니메이션명{
+    from{}
+    to{}
+}
+
+2)
+@keyframe 애니메이션명{
+    0%{}
+    50%{}
+    100%{}
+}
+-->
