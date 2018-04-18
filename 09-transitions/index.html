@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: green;
+            color: white;
+            transition: color .5s ease-in-out;
+        }
+        .box:hover{
+            background-color: red;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <span class="box">
+        Text
+    </span>
+</body>
+</html>
+<!--
+트랜지션(transitions)
+ - 어떤 state가 바뀔 때 적용.(hover, active, focus, visited)
+ ex) transition: background-color: red 5s ease-in-out;
+     (배경색이 점점 변경됨(초 -> 빨 5초간))
+ 
+애니메이션(animations)
+ - 움직임
+트랜스포메이션(transformations)
+ - 크기가 커지거나 작아짐, 회전, 움직임.
+미디어 쿼리(media query)
+ - 브라이주 크기를 알아내서 거기에 맞춰 사이즈 조정(웹/모바일 반응형)
+-->
